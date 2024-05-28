@@ -4,13 +4,13 @@
 
 import 'react-native';
 import React from 'react';
-import ComponentsApp from '../ComponentsApp.tsx';
 
 // Note: import explicitly to use the types shipped with jest.
-import {it} from '@jest/globals';
+import { it } from '@jest/globals';
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
+import ComponentsApp from '../src/ComponentsApp.tsx';
 
 it('renders correctly', () => {
   renderer.create(<ComponentsApp />);
